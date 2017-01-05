@@ -1,0 +1,2 @@
+module AccSystemCheckpointsHelper
+end

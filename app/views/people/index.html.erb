@@ -1,0 +1,18 @@
+<% lcTableName='Физ. лиц' %>
+<% loController=@people %>
+<% lcLink_path_edit='edit_person_path' %>
+<% lcLink_path_new=new_person_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],  
+  ['Наименование', -1,'name'],
+  ['Имя', 0, 'first_name'],
+  ['Отчетство', 0, 'second_name'],
+  ['Фамилия', 0, 'last_name'],
+  ['Номер телефона', 0, 'cellphone'],
+  ['ИНН', 0, 'inn']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

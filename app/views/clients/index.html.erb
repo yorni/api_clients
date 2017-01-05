@@ -1,0 +1,21 @@
+<% lcTableName='Контрагентов' %>
+<% loController=@clients %>
+<% lcLink_path_edit='edit_client_path' %>
+<% lcLink_path_new=new_client_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],  
+  ['Наименование', -1,'name'],
+  ['Имя', 0, 'first_name'],
+  ['Отчетство', 0, 'second_name'],
+  ['Фамилия', 0, 'last_name'],
+  ['Номер телефона', 0, 'cellphone'],
+  ['ОКПО', 0, 'okpo'],
+  ['ИНН', 0, 'inn'],
+  ['Тип клиента ID', 0, 'client_type_id'],
+  ['Тип клиента', 0, 'client_type.name']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

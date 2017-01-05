@@ -1,0 +1,15 @@
+<% lcTableName='Основных учетной систем' %>
+<% loController=@main_systems %>
+<% lcLink_path_edit='edit_main_system_path' %>
+<% lcLink_path_new=new_main_system_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],  
+  ['ID учетной системы', 0, 'acc_system_id'],
+  ['Наименование учетной системы', 0, 'acc_system.name'],  
+  ['TimeStamp', 0, 'time_stamp']
+  ]
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

@@ -1,0 +1,13 @@
+<% lcTableName='Типов клиентов' %>
+<% loController=@client_types %>
+<% lcLink_path_edit='edit_client_type_path' %>
+<% lcLink_path_new=new_client_type_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],      
+  ['Наименование', -1,'name']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

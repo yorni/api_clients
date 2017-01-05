@@ -1,0 +1,12 @@
+<% lcTableName='Точки синхронизация учетных систем' %>
+<% lcLink_path_back=acc_system_checkpoints_path %>
+<% loController=@acc_system_checkpoint %>
+
+<% laRow =  
+  [  
+  [1, 'Учетная система', 'acc_system_id', AccSystem.all, 'id', 'name', 'Выберите учетную систему'],
+  [2, 'TimeStamp', 'time_stamp']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

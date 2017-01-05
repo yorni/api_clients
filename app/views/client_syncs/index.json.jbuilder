@@ -1,0 +1,1 @@
+json.array! @client_syncs, partial: 'client_syncs/client_sync', as: :client_sync

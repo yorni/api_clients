@@ -1,0 +1,1 @@
+json.array! @client_documents, partial: 'client_documents/client_document', as: :client_document

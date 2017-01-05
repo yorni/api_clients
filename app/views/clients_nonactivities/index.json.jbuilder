@@ -1,0 +1,1 @@
+json.array! @clients_nonactivities, partial: 'clients_nonactivities/clients_nonactivity', as: :clients_nonactivity

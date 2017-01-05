@@ -1,0 +1,1 @@
+json.partial! "main_systems/main_system", main_system: @main_system

@@ -1,0 +1,1 @@
+json.array! @main_systems, partial: 'main_systems/main_system', as: :main_system

@@ -1,0 +1,2 @@
+module ClientWarehousesHelper
+end

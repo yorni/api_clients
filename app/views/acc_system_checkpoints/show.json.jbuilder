@@ -1,0 +1,1 @@
+json.partial! "acc_system_checkpoints/acc_system_checkpoint", acc_system_checkpoint: @acc_system_checkpoint

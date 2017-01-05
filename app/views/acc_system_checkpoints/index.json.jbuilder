@@ -1,0 +1,1 @@
+json.array! @acc_system_checkpoints, partial: 'acc_system_checkpoints/acc_system_checkpoint', as: :acc_system_checkpoint

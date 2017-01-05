@@ -1,0 +1,12 @@
+<% lcTableName='Подразделения контрагента' %>
+<% lcLink_path_back=client_warehouses_path %>
+<% loController=@client_warehouse %>
+
+<% laRow =  
+  [  
+  [1, 'Контрагент', 'client_id', Client.all, 'id', 'name', 'Выберите контрагента'],
+  [1, 'Поразделение', 'warehouse_id', Warehouse.all, 'id', 'name', 'Выберите подразделение']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

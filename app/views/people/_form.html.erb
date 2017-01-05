@@ -1,0 +1,16 @@
+<% lcTableName='Физ. лица' %>
+<% lcLink_path_back=people_path %>
+<% loController=@person %>
+
+<% laRow =  
+  [  
+  [0, 'Наименование', 'name'],
+  [0, 'Имя', 'first_name'],
+  [0, 'Отчетство', 'second_name'],
+  [0, 'Фамилия', 'last_name'],
+  [0, 'Номер телефона', 'cellphone'],
+  [0, 'ИНН', 'inn']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

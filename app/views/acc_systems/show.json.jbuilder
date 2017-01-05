@@ -1,0 +1,1 @@
+json.partial! "acc_systems/acc_system", acc_system: @acc_system

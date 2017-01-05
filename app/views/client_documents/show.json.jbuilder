@@ -1,0 +1,1 @@
+json.partial! "client_documents/client_document", client_document: @client_document

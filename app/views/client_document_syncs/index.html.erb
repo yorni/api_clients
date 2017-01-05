@@ -1,0 +1,30 @@
+<% lcTableName='Синхронизаций документов контрагентов' %>
+<% loController=@client_document_syncs %>
+<% lcLink_path_edit='edit_client_document_sync_path' %>
+<% lcLink_path_new=new_client_document_sync_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],      
+  ['ID док. контр.', 0, 'client_document_id'],  
+  ['ID контагента', 0, 'client_document.client_id'],  
+  ['Наименование контагента', -1,'client_document.client.name'],
+  ['Имя контагента', 0, 'client_document.client.first_name'],
+  ['Отчетство контагента', 0, 'client_document.client.second_name'],
+  ['Фамилия контагента', 0, 'client_document.client.last_name'],
+  ['Номер телефона контагента', 0, 'client_document.client.cellphone'],
+  ['ОКПО контагента', 0, 'client_document.client.okpo'],
+  ['ИНН контагента', 0, 'client_document.client.inn'],
+  ['Тип клиента ID', 0, 'client_document.client.client_type_id'],
+  ['Тип клиента', 0, 'client_document.client.client_type.name'],  
+  ['ID типа документа', 0, 'client_document.doc_type_id'],
+  ['Наименование типа документа', 0, 'client_document.doc_type.name'],
+  ['Номер документа', 0, 'client_document.doc_number'],
+  ['Серия документа', 0, 'client_document.doc_serial'],
+  ['ID учетной системы', 0, 'acc_system_id'],
+  ['Наименование учетной системы', 0, 'acc_system.name'],  
+  ['TimeStamp', 0, 'time_stamp']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

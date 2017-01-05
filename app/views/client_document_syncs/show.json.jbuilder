@@ -1,0 +1,1 @@
+json.partial! "client_document_syncs/client_document_sync", client_document_sync: @client_document_sync

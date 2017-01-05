@@ -1,0 +1,12 @@
+<% lcTableName='Основной учетной системы' %>
+<% lcLink_path_back=main_systems_path %>
+<% loController=@main_system %>
+
+<% laRow =  
+  [  
+  [1, 'Учетная система', 'acc_system_id', AccSystem.all, 'id', 'name', 'Выберите учетную систему'],
+  [2, 'TimeStamp', 'time_stamp']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

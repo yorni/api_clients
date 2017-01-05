@@ -1,0 +1,16 @@
+<% lcTableName='Ключа доступа' %>
+<% loController=@api_key %>
+<% lcLink_path_edit=edit_api_key_path(@api_key) %>
+<% lcLink_path_back=api_keys_path %>
+
+<% laRow =  
+  [  
+  ['ID', 'id'],      
+  ['ID учетной системы', 'acc_system_id'],
+  ['Наименование учетной системы', 'acc_system.name'],    
+  ['Ключ', 'key'],
+  ['Наименование', 'name']
+  ] 
+%>
+
+<%= render 'forms/show', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_back: lcLink_path_back, poController: loController, paRow: laRow %>

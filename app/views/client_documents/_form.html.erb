@@ -1,0 +1,14 @@
+<% lcTableName='Документа контрагента' %>
+<% lcLink_path_back=client_documents_path %>
+<% loController=@client_document %>
+
+<% laRow =  
+  [  
+  [1, 'Контрагент', 'client_id', Client.all, 'id', 'name', 'Выберите контрагента'],
+  [1, 'Тип документа', 'doc_type_id', DocType.all, 'id', 'name', 'Выберите тип документа'],
+  [0, 'Номер документа', 'doc_number'],
+  [0, 'Серия документа', 'doc_serial']  
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

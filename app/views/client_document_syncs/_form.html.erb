@@ -1,0 +1,13 @@
+<% lcTableName='Синхронизации документа контрагента' %>
+<% lcLink_path_back=client_document_syncs_path %>
+<% loController=@client_document_sync %>
+
+<% laRow =  
+  [  
+  [1, 'Документ контрагента', 'client_document_id', ClientDocument.all, 'id', 'client', 'Выберите документ контрагента'],
+  [1, 'Учетная система', 'acc_system_id', AccSystem.all, 'id', 'name', 'Выберите учетную систему'],
+  [2, 'TimeStamp', 'time_stamp']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

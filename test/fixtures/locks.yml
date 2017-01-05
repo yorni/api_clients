@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acc_system_id: 
+  time_stamp: 2016-09-19 17:42:13
+  lock_table_name_id: 
+
+two:
+  acc_system_id: 
+  time_stamp: 2016-09-19 17:42:13
+  lock_table_name_id: 

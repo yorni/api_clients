@@ -1,0 +1,13 @@
+<% lcTableName='Ключа доступа' %>
+<% lcLink_path_back=api_keys_path %>
+<% loController=@api_key %>
+
+<% laRow =  
+  [  
+  [1, 'Учетная система', 'acc_system_id', AccSystem.all, 'id', 'name', 'Выберите учетную систему'],
+  [0, 'Ключ', 'key'],
+  [0, 'Наименование', 'name']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

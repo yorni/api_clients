@@ -1,0 +1,13 @@
+<% lcTableName='Синхронизация физ. лица' %>
+<% lcLink_path_back=person_syncs_path %>
+<% loController=@person_sync %>
+
+<% laRow =  
+  [  
+  [1, 'Физ. лицо', 'person_id', Person.all, 'id', 'name', 'Выберите физ. лицо'],
+  [1, 'Учетная система', 'acc_system_id', AccSystem.all, 'id', 'name', 'Выберите учетную систему'],
+  [2, 'TimeStamp', 'time_stamp']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>

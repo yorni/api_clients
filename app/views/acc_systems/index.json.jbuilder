@@ -1,0 +1,1 @@
+json.array! @acc_systems, partial: 'acc_systems/acc_system', as: :acc_system

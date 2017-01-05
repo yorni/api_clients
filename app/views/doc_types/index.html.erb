@@ -1,0 +1,14 @@
+<% lcTableName='Типов документов' %>
+<% loController=@doc_types %>
+<% lcLink_path_edit='edit_doc_type_path' %>
+<% lcLink_path_new=new_doc_type_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],  
+  ['Наименование', -1,'name']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>
+

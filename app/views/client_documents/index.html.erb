@@ -1,0 +1,26 @@
+<% lcTableName='Документов контрагентов' %>
+<% loController=@client_documents %>
+<% lcLink_path_edit='edit_client_document_path' %>
+<% lcLink_path_new=new_client_document_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],      
+  ['ID контагента', 0, 'client_id'],  
+  ['Наименование контагента', -1,'client.name'],
+  ['Имя контагента', 0, 'client.first_name'],
+  ['Отчетство контагента', 0, 'client.second_name'],
+  ['Фамилия контагента', 0, 'client.last_name'],
+  ['Номер телефона контагента', 0, 'client.cellphone'],
+  ['ОКПО контагента', 0, 'client.okpo'],
+  ['ИНН контагента', 0, 'client.inn'],
+  ['Тип клиента ID', 0, 'client.client_type_id'],
+  ['Тип клиента', 0, 'client.client_type.name'],  
+  ['ID типа документа', 0, 'doc_type_id'],
+  ['Наименование типа документа', 0, 'doc_type.name'],
+  ['Номер документа', 0, 'doc_number'],
+  ['Серия документа', 0, 'doc_serial']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

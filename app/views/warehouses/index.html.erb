@@ -1,0 +1,14 @@
+<% lcTableName='Подразделений' %>
+<% loController=@warehouses %>
+<% lcLink_path_edit='edit_warehouse_path' %>
+<% lcLink_path_new=new_warehouse_path %>
+
+<% laRow =  
+  [  
+  ['ID', 0, 'id'],  
+  ['Код', 0,'warehouse_key'],
+  ['Наименование', -1,'name']
+  ] 
+%>
+
+<%= render 'forms/index', pcNotice: notice, pcTableName: lcTableName, pcLink_path_edit: lcLink_path_edit, pcLink_path_new: lcLink_path_new, poController: loController, paRow: laRow %>

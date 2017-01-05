@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acc_system_id: 
+  new_client: false
+  time_stamp: 2016-09-26 17:13:36
+
+two:
+  acc_system_id: 
+  new_client: false
+  time_stamp: 2016-09-26 17:13:36

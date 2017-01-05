@@ -1,0 +1,1 @@
+json.array! @client_warehouses, partial: 'client_warehouses/client_warehouse', as: :client_warehouse

@@ -1,0 +1,1 @@
+json.partial! "clients_nonactivities/clients_nonactivity", clients_nonactivity: @clients_nonactivity

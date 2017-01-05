@@ -1,0 +1,11 @@
+<% lcTableName='Типа документа' %>
+<% lcLink_path_back=doc_types_path %>
+<% loController=@doc_type %>
+
+<% laRow =  
+  [  
+  [0, 'Наименование', 'name']
+  ] 
+%>
+
+<%= render 'forms/form', poController: loController, paRow: laRow, piTypeform: piTypeform, pcTableName: lcTableName, pcLink_path_back: lcLink_path_back %>
